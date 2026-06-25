@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Victor Rafael | Full Stack Developer & UX Designer Portfolio</title>
+    <meta name="description" content="Portfólio profissional de Victor Rafael, desenvolvedor Full Stack e designer UX. Criação de sites modernos, de alta performance e experiências digitais incríveis.">
+    <meta name="keywords" content="Desenvolvedor, Web, Full Stack, React, Node, Design UX, CSS, JavaScript, Portfólio, Victor Rafael, GitHub Pages">
+    <meta name="author" content="Victor Rafael">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://victorafael2.github.io/minha-pagina-teste/">
+    <meta property="og:title" content="Victor Rafael | Full Stack Developer & UX Designer">
+    <meta property="og:description" content="Explore o portfólio profissional de Victor Rafael. Desenvolvimento moderno de alta performance e interfaces fluidas.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://victorafael2.github.io/minha-pagina-teste/">
+    <meta property="twitter:title" content="Victor Rafael | Full Stack Developer & UX Designer">
+    <meta property="twitter:description" content="Explore o portfólio profissional de Victor Rafael. Desenvolvimento moderno de alta performance e interfaces fluidas.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body data-theme="dark">
+
+    <!-- Background Orbs and Grid -->
+    <div class="background-glow" aria-hidden="true">
+        <div class="glow-orb glow-orb-1"></div>
+        <div class="glow-orb glow-orb-2"></div>
+    </div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- Navigation Header -->
+    <header id="main-header">
+        <div class="navbar">
+            <a href="#" class="logo" id="nav-logo">
+                VICTOR<span class="logo-dot"></span>
+            </a>
+            
+            <nav class="nav-links" aria-label="Navegação Principal">
+                <a href="#" class="nav-item active" id="link-home">Início</a>
+                <a href="#skills" class="nav-item" id="link-skills">Habilidades</a>
+                <a href="#projects" class="nav-item" id="link-projects">Projetos</a>
+                <a href="#contact" class="nav-item" id="link-contact">Contato</a>
+            </nav>
+            
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggler" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+                    <i data-lucide="sun"></i>
+                </button>
+                <a href="https://github.com/victorafael2" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" id="btn-github-profile">
+                    <i data-lucide="github"></i> <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <div class="hero-badge" id="availability-badge">
+                    <span class="hero-pulse" aria-hidden="true"></span>
+                    Disponível para novos projetos
+                </div>
+                <h1 class="hero-title">
+                    Criando <span class="gradient-text">experiências digitais</span> de alto nível
+                </h1>
+                <p class="hero-subtitle">
+                    Olá! Sou Victor Rafael, desenvolvedor Full Stack focado em construir interfaces fluidas, APIs robustas e arquiteturas modernas. Transformo ideias complexas em produtos simples e elegantes.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary" id="hero-cta-contact">
+                        Fale Comigo <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#projects" class="btn btn-secondary" id="hero-cta-projects">
+                        Ver Projetos
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-circle-ambient" aria-hidden="true"></div>
+                <!-- Premium Abstract CSS Graphic -->
+                <div class="hero-avatar-wrapper" id="avatar-container">
+                    <svg viewBox="0 0 100 100" class="hero-img" aria-label="Ilustração abstrata digital de Victor Rafael">
+                        <defs>
+                            <linearGradient id="avatar-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#6366f1" />
+                                <stop offset="50%" stop-color="#a855f7" />
+                                <stop offset="100%" stop-color="#ec4899" />
+                            </linearGradient>
+                            <linearGradient id="avatar-grad-2" x1="100%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#3b82f6" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
+                        <!-- Grid overlay pattern in SVG -->
+                        <rect x="0" y="0" width="100" height="100" fill="var(--bg-secondary)"/>
+                        
+                        <!-- Floating spheres & paths -->
+                        <circle cx="50" cy="50" r="30" fill="url(#avatar-grad-1)" opacity="0.8"/>
+                        <path d="M 20 80 Q 50 20 80 80" fill="none" stroke="url(#avatar-grad-2)" stroke-width="4" stroke-linecap="round"/>
+                        <path d="M 30 70 Q 50 40 70 70" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
+                        
+                        <!-- Orbital rings -->
+                        <ellipse cx="50" cy="50" rx="38" ry="12" fill="none" stroke="url(#avatar-grad-1)" stroke-width="1.5" transform="rotate(-30 50 50)" stroke-dasharray="5 3"/>
+                        <ellipse cx="50" cy="50" rx="42" ry="16" fill="none" stroke="url(#avatar-grad-2)" stroke-width="1" transform="rotate(20 50 50)"/>
+                        
+                        <!-- Core glowing element -->
+                        <circle cx="50" cy="50" r="10" fill="#ffffff" filter="drop-shadow(0px 0px 8px #a855f7)"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <span class="section-tag">Habilidades</span>
+            <h2 class="section-title">Minha Especialidade</h2>
+            <p class="section-desc">Combinando engenharia de software avançada com princípios modernos de design para entregar código limpo e escalável.</p>
+            
+            <div class="skills-grid">
+                <!-- Skill 1: Frontend -->
+                <article class="skill-card" id="skill-frontend">
+                    <div class="skill-icon-box" aria-hidden="true">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3 class="skill-card-title">Frontend Development</h3>
+                    <p class="skill-card-desc">Desenvolvimento de Single Page Applications (SPAs) dinâmicas e responsivas utilizando React, Next.js, TypeScript e CSS/Tailwind moderno. Foco em Core Web Vitals e excelente usabilidade.</p>
+                </article>
+                
+                <!-- Skill 2: Backend -->
+                <article class="skill-card" id="skill-backend">
+                    <div class="skill-icon-box" aria-hidden="true">
+                        <i data-lucide="server"></i>
+                    </div>
+                    <h3 class="skill-card-title">Backend & APIs</h3>
+                    <p class="skill-card-desc">Construção de microsserviços de alto desempenho e APIs RESTful/GraphQL eficientes. Proficiente em Node.js, Express, Python, e bancos de dados SQL/NoSQL (PostgreSQL, MongoDB).</p>
+                </article>
+                
+                <!-- Skill 3: DevOps/Cloud -->
+                <article class="skill-card" id="skill-devops">
+                    <div class="skill-icon-box" aria-hidden="true">
+                        <i data-lucide="cpu"></i>
+                    </div>
+                    <h3 class="skill-card-title">DevOps & Integração</h3>
+                    <p class="skill-card-desc">Implantação contínua e arquiteturas em nuvem (AWS/Vercel/Docker). Configuração de pipelines robustos de CI/CD (GitHub Actions) garantindo releases seguras e automatizadas.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <span class="section-tag">Portfólio</span>
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <p class="section-desc">Uma seleção de trabalhos que demonstram qualidade de código, arquitetura escalável e design atrativo.</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" id="project-flowise">
+                    <div class="project-img-wrapper">
+                        <!-- Generative Abstract Design for Project -->
+                        <svg width="100%" height="100%" viewBox="0 0 400 200" class="project-img" aria-label="Visualização do projeto Flowise UI">
+                            <rect width="100%" height="100%" fill="#110d29"/>
+                            <circle cx="200" cy="100" r="60" fill="none" stroke="#6366f1" stroke-width="4" opacity="0.6"/>
+                            <circle cx="200" cy="100" r="40" fill="none" stroke="#a855f7" stroke-width="2"/>
+                            <line x1="80" y1="100" x2="320" y2="100" stroke="rgba(255,255,255,0.1)" stroke-dasharray="5 5"/>
+                            <line x1="200" y1="20" x2="200" y2="180" stroke="rgba(255,255,255,0.1)" stroke-dasharray="5 5"/>
+                            <circle cx="140" cy="100" r="6" fill="#ec4899"/>
+                            <circle cx="260" cy="100" r="6" fill="#10b981"/>
+                            <path d="M 140 100 Q 200 40 260 100" fill="none" stroke="#ec4899" stroke-width="2" stroke-dasharray="4 2"/>
+                        </svg>
+                        <div class="project-overlay">
+                            <span class="project-tag">AI / Interface</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Flowise</span>
+                        </div>
+                        <h3 class="project-card-title">Flowise Custom Dashboard</h3>
+                        <p class="project-card-desc">Redesign de interface completo para criação de fluxos de LLM em tempo real. Melhora na experiência do usuário e otimização de renderização de nós.</p>
+                        <a href="https://github.com/victorafael2" target="_blank" rel="noopener noreferrer" class="project-link" id="link-project-flowise">
+                            Ver Repositório <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" id="project-antigravity">
+                    <div class="project-img-wrapper">
+                        <!-- Generative Abstract Design for Project -->
+                        <svg width="100%" height="100%" viewBox="0 0 400 200" class="project-img" aria-label="Visualização do projeto Antigravity CLI">
+                            <rect width="100%" height="100%" fill="#0a081a"/>
+                            <path d="M 50 150 L 150 50 L 250 120 L 350 30" fill="none" stroke="#ec4899" stroke-width="4" stroke-linecap="round"/>
+                            <path d="M 50 150 L 150 50 L 250 120 L 350 30" fill="none" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="350" cy="30" r="8" fill="#ffffff" filter="drop-shadow(0 0 5px #6366f1)"/>
+                            <rect x="235" y="105" width="30" height="30" rx="6" fill="#121226" stroke="#a855f7" stroke-width="2"/>
+                            <text x="245" y="125" fill="#a855f7" font-family="Space Grotesk" font-weight="bold" font-size="16">&gt;</text>
+                        </svg>
+                        <div class="project-overlay">
+                            <span class="project-tag">CLI / Automation</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">Go / CLI</span>
+                            <span class="project-tag">GitHub Actions</span>
+                            <span class="project-tag">Automation</span>
+                        </div>
+                        <h3 class="project-card-title">Antigravity CLI Tool</h3>
+                        <p class="project-card-desc">Utilitário de linha de comando rápido para gerenciamento e sincronização de ambientes locais com plataformas de nuvem híbrida.</p>
+                        <a href="https://github.com/victorafael2" target="_blank" rel="noopener noreferrer" class="project-link" id="link-project-antigravity">
+                            Ver Repositório <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card" id="project-nexus">
+                    <div class="project-img-wrapper">
+                        <!-- Generative Abstract Design for Project -->
+                        <svg width="100%" height="100%" viewBox="0 0 400 200" class="project-img" aria-label="Visualização do projeto Nexus Admin">
+                            <rect width="100%" height="100%" fill="#070514"/>
+                            <!-- Abstract grid pattern -->
+                            <rect x="50" y="40" width="300" height="120" rx="8" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)"/>
+                            <circle cx="80" cy="65" r="5" fill="#ef4444"/>
+                            <circle cx="95" cy="65" r="5" fill="#f59e0b"/>
+                            <circle cx="110" cy="65" r="5" fill="#10b981"/>
+                            <rect x="130" y="58" width="120" height="14" rx="7" fill="rgba(255,255,255,0.05)"/>
+                            <!-- Chart shapes -->
+                            <rect x="80" y="100" width="30" height="40" rx="3" fill="#6366f1" opacity="0.8"/>
+                            <rect x="120" y="90" width="30" height="50" rx="3" fill="#a855f7" opacity="0.8"/>
+                            <rect x="160" y="110" width="30" height="30" rx="3" fill="#ec4899" opacity="0.8"/>
+                            <rect x="200" y="80" width="30" height="60" rx="3" fill="#3b82f6" opacity="0.8"/>
+                        </svg>
+                        <div class="project-overlay">
+                            <span class="project-tag">SaaS / WebApp</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Glassmorphism</span>
+                        </div>
+                        <h3 class="project-card-title">Nexus SaaS Platform</h3>
+                        <p class="project-card-desc">Plataforma SaaS para monitoramento de dados em tempo real. Possui suporte completo a temas, autenticação segura e layouts customizáveis.</p>
+                        <a href="https://github.com/victorafael2" target="_blank" rel="noopener noreferrer" class="project-link" id="link-project-nexus">
+                            Ver Repositório <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <span class="section-tag">Contato</span>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div>
+                        <h2 class="contact-info-title">Vamos conversar sobre seu projeto?</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 32px;">Estou sempre interessado em novas oportunidades, ideias inovadoras ou colaborações open-source. Entre em contato preenchendo o formulário ou usando os canais abaixo!</p>
+                    </div>
+                    
+                    <div class="contact-channels">
+                        <div class="channel">
+                            <div class="channel-icon" aria-hidden="true">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="channel-details">
+                                <span class="channel-label">E-mail</span>
+                                <a href="mailto:victor.rafael.dev@gmail.com" class="channel-value" id="contact-email">victor.rafael.dev@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="channel">
+                            <div class="channel-icon" aria-hidden="true">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="channel-details">
+                                <span class="channel-label">Localização</span>
+                                <span class="channel-value">São Paulo, Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-name">Seu Nome</label>
+                            <input type="text" id="form-name" placeholder="Ex: Victor Rafael" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Seu E-mail</label>
+                            <input type="email" id="form-email" placeholder="Ex: contato@empresa.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Assunto</label>
+                        <input type="text" id="form-subject" placeholder="Ex: Proposta de Projeto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Sua Mensagem</label>
+                        <textarea id="form-message" placeholder="Como posso ajudar você?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn" id="btn-submit-form">
+                        Enviar Mensagem <i data-lucide="send"></i>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text" id="footer-copy">
+                &copy; <span id="current-year">2026</span> Victor Rafael. Todos os direitos reservados.
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/victorafael2" target="_blank" rel="noopener noreferrer" class="btn-icon" id="footer-github" aria-label="Acessar perfil do GitHub" title="GitHub">
+                    <i data-lucide="github"></i>
+                </a>
+                <a href="https://linkedin.com/in/victorafael" target="_blank" rel="noopener noreferrer" class="btn-icon" id="footer-linkedin" aria-label="Acessar perfil do LinkedIn" title="LinkedIn">
+                    <i data-lucide="linkedin"></i>
+                </a>
+                <a href="mailto:victor.rafael.dev@gmail.com" class="btn-icon" id="footer-email" aria-label="Enviar um e-mail" title="E-mail">
+                    <i data-lucide="mail"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Success Notification -->
+    <div class="toast-msg" id="contact-toast" role="alert" aria-live="assertive">
+        <i data-lucide="check-circle-2"></i>
+        <span>Mensagem enviada com sucesso!</span>
+    </div>
+
+    <!-- Scripting for Interactions -->
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Header Scrolling Shadow / Glassmorphism toggle
+        const header = document.getElementById('main-header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+            
+            // Highlight active nav item depending on scroll position
+            const sections = document.querySelectorAll('section');
+            const navItems = document.querySelectorAll('.nav-item');
+            
+            let currentSectionId = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 160;
+                if (window.scrollY >= sectionTop) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+            
+            navItems.forEach(item => {
+                item.classList.remove('active');
+                if (item.getAttribute('href') === `#${currentSectionId}` || 
+                   (currentSectionId === 'home' && item.getAttribute('href') === '#')) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // Theme Toggle Functionality
+        const themeToggler = document.getElementById('theme-toggler');
+        const themeTogglerIcon = themeToggler.querySelector('i');
+        const bodyElement = document.body;
+
+        // Load saved theme or default to system preference (or dark)
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        bodyElement.setAttribute('data-theme', savedTheme);
+        updateTogglerIcon(savedTheme);
+
+        themeToggler.addEventListener('click', () => {
+            const currentTheme = bodyElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            bodyElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateTogglerIcon(newTheme);
+        });
+
+        function updateTogglerIcon(theme) {
+            // Re-render icon based on state
+            if (theme === 'light') {
+                themeToggler.innerHTML = '<i data-lucide="moon"></i>';
+            } else {
+                themeToggler.innerHTML = '<i data-lucide="sun"></i>';
+            }
+            lucide.createIcons();
+        }
+
+        // Setup footer dynamic year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Contact Form Interactivity & Validation
+        const contactForm = document.getElementById('contact-form');
+        const toast = document.getElementById('contact-toast');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Simple validation check
+            const name = document.getElementById('form-name').value.trim();
+            const email = document.getElementById('form-email').value.trim();
+            const subject = document.getElementById('form-subject').value.trim();
+            const message = document.getElementById('form-message').value.trim();
+
+            if (!name || !email || !subject || !message) {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+                return;
+            }
+
+            // Simulate form submission success
+            const submitBtn = document.getElementById('btn-submit-form');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<i data-lucide="loader" class="animate-spin"></i> Enviando...';
+            lucide.createIcons();
+
+            setTimeout(() => {
+                // Show success toast
+                toast.classList.add('show');
+                
+                // Reset form fields
+                contactForm.reset();
+                
+                // Reset button status
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnText;
+                lucide.createIcons();
+
+                // Hide success toast after 4 seconds
+                setTimeout(() => {
+                    toast.classList.remove('show');
+                }, 4000);
+            }, 1200);
+        });
+    </script>
+</body>
+</html>
